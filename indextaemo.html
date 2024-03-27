@@ -1,27 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ta emo muccio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-  </style>
+  <title>Programa Ta emo y muccio</title>
+  <script src="script.js"></script>
 </head>
 <body>
-  <div id="contenedor"></div>
-
-  <script>
-    var contenedor = document.getElementById('contenedor');
-
-    for (var i = 1; i <= 6; i++) {
-      for (var j = 0; j < 10; j++) {
-        var elemento = document.createElement('h' + i);
-        // Alternar entre 'Ta emo' y 'Ta emo muccio'
-        elemento.textContent = j % 2 === 0 ? 'Ta emo' : 'Ta emo muccio';
-        contenedor.appendChild(elemento);
-      }
-    }
-  </script>
+  <div id="mensaje"></div>
 </body>
 </html>
